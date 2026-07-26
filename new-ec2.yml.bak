@@ -10,7 +10,11 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: 0.0.0.0/0
-        
+        - IpProtocol: tcp
+          FromPort: 8080
+          ToPort: 8080
+          CidrIp: 0.0.0.0/0  
+
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
@@ -21,4 +25,4 @@ Resources:
         - !Ref MySecurityGroup
       Tags:
         - Key: Name
-          Value: new updated code
+          Value: updated code

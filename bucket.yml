@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: "create s3 bucket"
 
 Resources:
-  MySecondS3Bucket:
+  serverbucket:
     Type: AWS::S3::Bucket
     DeletionPolicy: Retain
     Properties:
